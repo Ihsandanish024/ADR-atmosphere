@@ -98,7 +98,10 @@ export default function Home() {
     <>
       <header className="site-header">
         <a className="brand" href="#home" aria-label="JTR ADR organization home">
-          <span className="brand-mark">JTR</span>
+          <span className="brand-mark" aria-hidden="true">
+            <span className="brand-logo-jtr">JTR</span>
+            <span className="brand-logo-adr">ADR</span>
+          </span>
           <span className="brand-name">
             <strong>JTR ADR organization</strong>
             <span>Practical dispute resolution</span>
@@ -387,7 +390,10 @@ export default function Home() {
 
       <footer className="site-footer">
         <a className="brand brand-footer" href="#home">
-          <span className="brand-mark">ADR</span>
+          <span className="brand-mark" aria-hidden="true">
+            <span className="brand-logo-jtr">JTR</span>
+            <span className="brand-logo-adr">ADR</span>
+          </span>
           <span className="brand-name">
             <strong>JTR ADR organization</strong>
             <span>Practical dispute resolution</span>

@@ -61,16 +61,40 @@ a {
 }
 
 .brand-mark {
-  display: grid;
-  width: 43px;
-  height: 43px;
-  place-items: center;
-  border: 1px solid var(--burgundy);
-  border-radius: 50%;
-  color: var(--burgundy);
-  font-size: 13px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 66px;
+  height: 66px;
+  border: 1px solid rgba(32, 43, 59, 0.12);
+  border-radius: 18px;
+  background: linear-gradient(135deg, var(--navy) 0%, var(--burgundy) 100%);
+  box-shadow: 0 12px 24px rgb(32 43 59 / 12%);
+  overflow: hidden;
+}
+
+.brand-logo-jtr,
+.brand-logo-adr {
+  display: block;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.brand-logo-jtr {
+  color: #fef9f4;
+  font-size: 11px;
   font-weight: 800;
-  letter-spacing: -0.07em;
+  letter-spacing: 0.16em;
+}
+
+.brand-logo-adr {
+  margin-top: 2px;
+  color: #f7c8b5;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
 }
 
 .brand-name,
