@@ -42,20 +42,72 @@ const steps = [
   },
 ];
 
+const methods = [
+  {
+    number: "01",
+    title: "Negotiation",
+    description:
+      "The people in a dispute communicate directly, or through their representatives, to see whether they can reach an agreement.",
+  },
+  {
+    number: "02",
+    title: "Mediation",
+    description:
+      "An impartial mediator helps the participants have a structured conversation. The participants decide whether to agree.",
+  },
+  {
+    number: "03",
+    title: "Conciliation",
+    description:
+      "A conciliator helps the participants explore settlement. Depending on the process, the conciliator may also suggest possible terms.",
+  },
+  {
+    number: "04",
+    title: "Arbitration",
+    description:
+      "The parties present their positions to an arbitrator, who gives a decision. Its effect depends on the agreement and applicable law.",
+  },
+  {
+    number: "05",
+    title: "Neutral evaluation",
+    description:
+      "A neutral person gives an initial assessment of the issues or likely strengths of a case to help inform next steps.",
+  },
+  {
+    number: "06",
+    title: "Expert determination",
+    description:
+      "An independent specialist considers a defined technical or professional question. The parties’ agreement sets the process and effect.",
+  },
+  {
+    number: "07",
+    title: "Med-Arb",
+    description:
+      "A combined process that begins with mediation and may move to arbitration if issues remain unresolved, subject to agreed safeguards.",
+  },
+  {
+    number: "08",
+    title: "Online dispute resolution",
+    description:
+      "Technology supports some or all of a dispute-resolution process, such as exchanging proposals or meeting remotely.",
+  },
+];
+
 export default function Home() {
   return (
     <>
       <header className="site-header">
-        <a className="brand" href="#home" aria-label="ADR Atmosphere home">
-          <span className="brand-mark">ADR</span>
+        <a className="brand" href="#home" aria-label="JTR ADR organization home">
+          <span className="brand-mark">JTR</span>
           <span className="brand-name">
-            <strong>ADR Atmosphere</strong>
+            <strong>JTR ADR organization</strong>
             <span>Practical dispute resolution</span>
           </span>
         </a>
 
         <nav className="main-nav" aria-label="Main navigation">
           <a href="#about">About ADR</a>
+          <a href="#methods">ADR methods</a>
           <a href="#why-adr">Why ADR</a>
           <a href="#process">How it works</a>
         </nav>
@@ -166,6 +218,54 @@ export default function Home() {
             <a className="text-link" href="#process">
               See a typical path <span aria-hidden="true">↓</span>
             </a>
+          </div>
+        </section>
+
+        <section className="methods-section" id="methods">
+          <div className="section-wrap">
+            <div className="methods-heading">
+              <div>
+                <p className="eyebrow">
+                  <span className="eyebrow-line" />
+                  Explore the possibilities
+                </p>
+                <h2>
+                  Different disputes.
+                  <br />
+                  Different <em>approaches.</em>
+                </h2>
+                <p className="methods-intro">
+                  ADR includes a range of processes. Here are some commonly
+                  used approaches; the right option depends on the dispute,
+                  participants, and applicable rules.
+                </p>
+              </div>
+              <div className="methods-image">
+                <Image
+                  src="/images/adr%204.jpg"
+                  alt="A speaker presenting at an ADR and peacebuilding event"
+                  fill
+                  sizes="(max-width: 680px) 100vw, 36vw"
+                  className="methods-photo"
+                />
+                <span>Learning, dialogue &amp; practical resolution</span>
+              </div>
+            </div>
+
+            <div className="methods-grid">
+              {methods.map((method) => (
+                <article className="method-card" key={method.number}>
+                  <span className="method-number">{method.number}</span>
+                  <h3>{method.title}</h3>
+                  <p>{method.description}</p>
+                </article>
+              ))}
+            </div>
+
+            <p className="methods-note">
+              Processes, terminology, and legal effect can vary by location and
+              agreement. This overview is general information, not legal advice.
+            </p>
           </div>
         </section>
 
@@ -288,7 +388,7 @@ export default function Home() {
         <a className="brand brand-footer" href="#home">
           <span className="brand-mark">ADR</span>
           <span className="brand-name">
-            <strong>ADR Atmosphere</strong>
+            <strong>JTR ADR organization</strong>
             <span>Practical dispute resolution</span>
           </span>
         </a>

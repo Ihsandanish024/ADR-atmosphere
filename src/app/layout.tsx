@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ADR Atmosphere | Practical Dispute Resolution",
+  title: "JTR ADR organization | Practical Dispute Resolution",
   description:
     "Understand alternative dispute resolution and explore practical ways to address disagreements.",
 };
