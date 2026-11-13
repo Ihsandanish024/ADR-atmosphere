@@ -110,6 +110,7 @@ export default function Home() {
           <a href="#methods">ADR methods</a>
           <a href="#why-adr">Why ADR</a>
           <a href="#process">How it works</a>
+          <a href="/activities">Activities</a>
         </nav>
 
         <a className="header-cta" href="#contact">
